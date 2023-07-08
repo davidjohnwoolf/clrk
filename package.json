@@ -1,0 +1,26 @@
+{
+  "name": "clrk",
+  "version": "1.0.0",
+  "description": "A CLI time management tool",
+  "main": "bin/index.js",
+  "bin": {
+    "clrk": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint"
+  },
+  "author": "David Woolf <davidjohnwoolf@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "inquirer": "^9.2.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.41.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}
