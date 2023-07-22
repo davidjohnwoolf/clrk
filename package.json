@@ -7,20 +7,30 @@
     "clrk": "./bin/index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint"
+    "clean": "rimraf dist",
+    "lint": "eslint . --ext .ts --fix",
+    "test": "echo 'No tests available'",
+    "prestart": "npm run clean && npm run lint && npm run test",
+    "build": "rollup -c",
+    "start": "rollup -c -w"
   },
   "author": "David Woolf <davidjohnwoolf@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "chalk": "^5.2.0",
-    "inquirer": "^9.2.6"
-  },
+  "type": "module",
   "devDependencies": {
-    "eslint": "^8.41.0",
-    "eslint-config-standard": "^17.0.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8.45.0",
+    "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-n": "^16.0.1",
     "eslint-plugin-promise": "^6.1.1"
+  },
+  "peerDependencies": {
+    "rimraf": "^5.0.1",
+    "rollup": "^3.26.3",
+    "tslib": "^2.6.0",
+    "typescript": "^5.1.6"
   }
 }

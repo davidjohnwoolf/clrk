@@ -1,6 +1,6 @@
 # clrk
 
-Clrk (clerk) aims to establish itself as a time management assistant that can be setup to suit a variety of approaches to time management.
+The clrk (clerk) project aims to establish itself as an extensible time management toolkit geared towards developers that can be setup to suit a variety of approaches to time management based loosely around a core implementation of a broadly GTD system.
 
 ## Project Overview
 

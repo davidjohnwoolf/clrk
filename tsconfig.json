@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "target": "es2021",
+    "module": "esnext",
+    "moduleResolution": "node",   
+    "noEmitOnError": true,
+    "lib": ["es2023", "dom"],
+    "strict": true,
+    "esModuleInterop": false,
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+  ]
+}
